@@ -2,7 +2,7 @@
 
 A modern, responsive developer portfolio built with **Next.js 15**, **React 19**, **TypeScript**, and **Tailwind CSS**.
 
-Designed for developers, freelancers, students and software engineers who want a fast, professional-looking portfolio that's easy to customise and deploy.
+Designed for software engineers, freelancers, students and developers who want a fast, professional-looking portfolio that's easy to customise and deploy.
 
 ---
 
@@ -10,16 +10,17 @@ Designed for developers, freelancers, students and software engineers who want a
 
 - Modern responsive design
 - Built with Next.js 15 App Router
-- TypeScript support
-- Tailwind CSS styling
+- React 19 & TypeScript
+- Tailwind CSS
+- Responsive layout
 - SEO-ready metadata
 - Open Graph support
 - Blog structure included
-- Responsive navigation
 - Featured projects section
 - Skills section
 - Experience timeline
 - Contact page
+- Custom 404 page
 - Automatic sitemap & robots.txt
 - One-click deployment with Vercel
 
@@ -49,26 +50,28 @@ http://localhost:3000
 
 ## ⚙️ Customisation
 
-The entire portfolio can be customised by editing a single file:
+The template is designed so that the **main portfolio content** can be managed from a single configuration file:
 
 ```
 data/site.ts
 ```
 
-Update your:
+From this file you can customise:
 
-- Name
-- Job Title
-- Tagline
-- Location
-- Email Address
-- Social Links
+- Personal information
+- Hero section
+- Homepage section headings
 - Skills
-- Projects
+- Featured projects
 - Experience
-- Blog Posts
+- Blog previews
+- Footer call-to-action
+- Social links
+- SEO metadata
 
-No need to search through multiple files.
+This keeps the most commonly edited content in one place, making it quick and easy to personalise the template.
+
+A small number of page layouts and component styles remain in their respective files to keep the codebase clean and maintainable.
 
 ---
 
@@ -84,7 +87,7 @@ npm run build
 
 Deploy your portfolio for free with Vercel.
 
-1. Push your project to GitHub
+1. Push the project to GitHub
 2. Import the repository into Vercel
 3. Click **Deploy**
 
@@ -110,7 +113,7 @@ data/
 public/
 ```
 
-Everything is organised to make editing and extending the template straightforward.
+The project is organised to make editing and extending the template straightforward.
 
 ---
 
@@ -119,8 +122,8 @@ Everything is organised to make editing and extending the template straightforwa
 - Software Engineers
 - Frontend Developers
 - Full-Stack Developers
-- Students
 - Freelancers
+- Students
 - Job Seekers
 
 ---
