@@ -16,26 +16,29 @@ export const skills = ['Next.js', 'React', 'TypeScript', 'Node.js', 'PostgreSQL'
 
 export const projects = [
   {
-    title: 'Nova CRM',
+    title: 'LaunchFlow',
     description:
-      'A modern customer platform with analytics, user management and subscription billing.',
-    tech: ['Next.js', 'TypeScript', 'Prisma', 'Stripe'],
+      'A SaaS platform for managing product launches, feature flags and customer feedback in one clean workspace.',
+    tech: ['Next.js', 'TypeScript', 'Supabase', 'Stripe'],
+    image: '/assets/launchflow.png',
     liveUrl: '#',
     githubUrl: '#'
   },
   {
-    title: 'Pulse Analytics',
+    title: 'InvoicePilot',
     description:
-      'Real-time SaaS dashboards with interactive charts, team reporting and clean data visualisation.',
-    tech: ['React', 'PostgreSQL', 'Tailwind', 'Vercel'],
+      'Modern invoicing software for freelancers and agencies with recurring billing, client portals and analytics.',
+    tech: ['React', 'Node.js', 'PostgreSQL', 'Tailwind'],
+    image: '/assets/invoicepilot.png',
     liveUrl: '#',
     githubUrl: '#'
   },
   {
-    title: 'Atlas API',
+    title: 'HireTrack',
     description:
-      'A scalable REST API with authentication, rate limiting and automated documentation.',
-    tech: ['Node.js', 'Express', 'Redis', 'Docker'],
+      'Applicant tracking software with interview scheduling, candidate notes and AI-powered hiring summaries.',
+    tech: ['Next.js', 'OpenAI', 'Prisma', 'Vercel'],
+    image: '/assets/hiretrack.png',
     liveUrl: '#',
     githubUrl: '#'
   }
