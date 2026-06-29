@@ -1,4 +1,4 @@
-import { siteConfig } from '@/data/site';
+import { footerCta, siteConfig } from '@/data/site';
 
 export function Footer() {
   return (
@@ -8,23 +8,22 @@ export function Footer() {
         <div className="mb-16 rounded-3xl border border-white/10 bg-gradient-to-br from-white/[0.05] to-white/[0.02] p-10">
 
           <span className="rounded-full border border-brand-500/30 bg-brand-500/10 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-brand-400">
-            Let's Build Something
+            {footerCta.eyebrow}
           </span>
 
           <h2 className="mt-6 max-w-2xl text-4xl font-bold tracking-tight md:text-5xl">
-            Looking for a developer that cares about design as much as code?
+            {footerCta.title}
           </h2>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-400">
-            I build modern web applications with React, Next.js and TypeScript,
-            focusing on performance, accessibility and user experience.
+            {footerCta.description}
           </p>
 
           <a
             href={`mailto:${siteConfig.email}`}
             className="mt-10 inline-flex rounded-full bg-white px-6 py-3 font-semibold text-zinc-950 transition hover:bg-brand-500 hover:text-white"
           >
-            Get In Touch
+            {footerCta.buttonLabel}
           </a>
 
         </div>

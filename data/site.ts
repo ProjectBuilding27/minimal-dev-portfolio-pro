@@ -69,6 +69,14 @@ export const sections = {
   },
 };
 
+export const footerCta = {
+  eyebrow: "Let's Build Something",
+  title: 'Looking for a developer that cares about design as much as code?',
+  description:
+    'I build modern web applications with React, Next.js and TypeScript, focusing on performance, accessibility and user experience.',
+  buttonLabel: 'Get In Touch',
+};
+
 export const skills = [
   'Next.js',
   'React',
