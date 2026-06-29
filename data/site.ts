@@ -15,6 +15,33 @@ export const siteConfig = {
   },
 };
 
+export const hero = {
+  badge: 'Available for freelance projects',
+  eyebrow: 'Senior Full-Stack Engineer',
+  headline:
+    'Building high-performance web applications with React, Next.js and TypeScript.',
+  description:
+    'Based in London, United Kingdom. I design and build reliable web applications, APIs and product experiences that feel fast, polished and easy to use.',
+  primaryButton: {
+    label: 'View Projects',
+    href: '/projects',
+  },
+  secondaryButton: {
+    label: 'Contact Me',
+    href: '/contact',
+  },
+  codeCard: {
+    filename: 'profile.ts',
+    variable: 'developer',
+    stack: 'Next.js + TypeScript',
+    focus: 'Clean product engineering',
+  },
+  stat: {
+    label: 'Projects shipped',
+    value: '24+',
+  },
+};
+
 export const skills = [
   'Next.js',
   'React',

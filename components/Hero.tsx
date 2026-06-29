@@ -1,5 +1,5 @@
 import { Button } from '@/components/Button';
-import { siteConfig, skills } from '@/data/site';
+import { hero, siteConfig, skills } from '@/data/site';
 
 export function Hero() {
   return (
@@ -11,27 +11,27 @@ export function Hero() {
       <div className="relative mx-auto grid min-h-[86vh] max-w-6xl items-center gap-12 px-6 py-24 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
           <div className="mb-6 inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-zinc-300 backdrop-blur">
-            Available for freelance projects
+            {hero.badge}
           </div>
 
           <p className="mb-5 text-sm font-semibold uppercase tracking-[0.3em] text-brand-500">
-            {siteConfig.role}
+            {hero.eyebrow}
           </p>
 
           <h1 className="max-w-4xl text-5xl font-bold tracking-tight md:text-7xl">
-            {siteConfig.tagline}
+            {hero.headline}
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-400">
-            Based in {siteConfig.location}. I design and build reliable web
-            applications, APIs and product experiences that feel fast, polished
-            and easy to use.
+            {hero.description}
           </p>
 
           <div className="mt-9 flex flex-wrap gap-4">
-            <Button href="/projects">View Projects</Button>
-            <Button href="/contact" variant="secondary">
-              Contact Me
+            <Button href={hero.primaryButton.href}>
+              {hero.primaryButton.label}
+            </Button>
+            <Button href={hero.secondaryButton.href} variant="secondary">
+              {hero.secondaryButton.label}
             </Button>
           </div>
 
@@ -57,24 +57,34 @@ export function Hero() {
               </div>
 
               <div className="space-y-4 font-mono text-sm">
-                <p className="text-zinc-500">// profile.ts</p>
+                <p className="text-zinc-500">// {hero.codeCard.filename}</p>
                 <p>
                   <span className="text-purple-400">const</span>{' '}
-                  <span className="text-cyan-300">developer</span>{' '}
+                  <span className="text-cyan-300">
+                    {hero.codeCard.variable}
+                  </span>{' '}
                   <span className="text-zinc-500">=</span>{' '}
                   <span className="text-zinc-300">{'{'}</span>
                 </p>
                 <p className="pl-5 text-zinc-300">
-                  name: <span className="text-green-300">"{siteConfig.name}"</span>,
+                  name:{' '}
+                  <span className="text-green-300">"{siteConfig.name}"</span>,
                 </p>
                 <p className="pl-5 text-zinc-300">
-                  role: <span className="text-green-300">"{siteConfig.role}"</span>,
+                  role:{' '}
+                  <span className="text-green-300">"{siteConfig.role}"</span>,
                 </p>
                 <p className="pl-5 text-zinc-300">
-                  stack: <span className="text-green-300">"Next.js + TypeScript"</span>,
+                  stack:{' '}
+                  <span className="text-green-300">
+                    "{hero.codeCard.stack}"
+                  </span>,
                 </p>
                 <p className="pl-5 text-zinc-300">
-                  focus: <span className="text-green-300">"Clean product engineering"</span>
+                  focus:{' '}
+                  <span className="text-green-300">
+                    "{hero.codeCard.focus}"
+                  </span>
                 </p>
                 <p className="text-zinc-300">{'}'}</p>
               </div>
@@ -82,8 +92,8 @@ export function Hero() {
           </div>
 
           <div className="absolute -bottom-6 -left-6 rounded-2xl border border-white/10 bg-zinc-950/90 p-4 shadow-xl backdrop-blur">
-            <p className="text-sm text-zinc-400">Projects shipped</p>
-            <p className="mt-1 text-3xl font-bold">24+</p>
+            <p className="text-sm text-zinc-400">{hero.stat.label}</p>
+            <p className="mt-1 text-3xl font-bold">{hero.stat.value}</p>
           </div>
         </div>
       </div>
