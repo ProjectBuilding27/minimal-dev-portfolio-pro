@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type Project = {
   title: string;
   description: string;
@@ -13,6 +15,17 @@ export function ProjectCard({ project }: { project: Project }) {
 
       {/* Background Glow */}
       <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-brand-500/10 blur-3xl opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
+      {/* Project Image */}
+      <div className="relative mb-6 overflow-hidden rounded-2xl border border-white/10 bg-zinc-900">
+        <Image
+          src={project.image}
+          alt={`${project.title} preview`}
+          width={800}
+          height={450}
+          className="h-56 w-full object-cover transition duration-300 group-hover:scale-105"
+        />
+      </div>
 
       {/* Header */}
       <div className="mb-6 flex items-center justify-between">
