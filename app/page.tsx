@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Hero } from '@/components/Hero';
 import { ProjectCard } from '@/components/ProjectCard';
 import { SectionHeading } from '@/components/SectionHeading';
-import { experience, posts, projects, skills } from '@/data/site';
+import { experience, posts, projects, sections, skills } from '@/data/site';
 
 export default function HomePage() {
   return (
@@ -11,9 +11,9 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-6xl px-6 py-24">
         <SectionHeading
-          eyebrow="Featured work"
-          title="Projects built with care"
-          description="A curated selection of products, experiments and production-ready systems."
+          eyebrow={sections.projects.eyebrow}
+          title={sections.projects.title}
+          description={sections.projects.description}
         />
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -27,9 +27,9 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <SectionHeading
-              eyebrow="Stack"
-              title="A modern toolkit for shipping fast"
-              description="Built for developers who care about performance, maintainability and clean user experience."
+              eyebrow={sections.skills.eyebrow}
+              title={sections.skills.title}
+              description={sections.skills.description}
             />
           </div>
 
@@ -48,9 +48,9 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-6xl px-6 py-24">
         <SectionHeading
-          eyebrow="Experience"
-          title="Product-minded engineering"
-          description="A simple timeline layout for work history, freelance projects or career milestones."
+          eyebrow={sections.experience.eyebrow}
+          title={sections.experience.title}
+          description={sections.experience.description}
         />
 
         <div className="relative space-y-6 border-l border-white/10 pl-6">
@@ -79,9 +79,9 @@ export default function HomePage() {
       <section className="border-y border-white/10 bg-white/[0.02] px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <SectionHeading
-            eyebrow="Writing"
-            title="Notes on software, systems and shipping"
-            description="A clean blog preview section powered by simple content data."
+            eyebrow={sections.writing.eyebrow}
+            title={sections.writing.title}
+            description={sections.writing.description}
           />
 
           <div className="grid gap-6 md:grid-cols-2">

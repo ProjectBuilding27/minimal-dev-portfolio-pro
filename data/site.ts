@@ -42,6 +42,33 @@ export const hero = {
   },
 };
 
+export const sections = {
+  projects: {
+    eyebrow: 'Featured work',
+    title: 'Projects built with care',
+    description:
+      'A curated selection of products, experiments and production-ready systems.',
+  },
+  skills: {
+    eyebrow: 'Stack',
+    title: 'A modern toolkit for shipping fast',
+    description:
+      'Built for developers who care about performance, maintainability and clean user experience.',
+  },
+  experience: {
+    eyebrow: 'Experience',
+    title: 'Product-minded engineering',
+    description:
+      'A simple timeline layout for work history, freelance projects or career milestones.',
+  },
+  writing: {
+    eyebrow: 'Writing',
+    title: 'Notes on software, systems and shipping',
+    description:
+      'A clean blog preview section powered by simple content data.',
+  },
+};
+
 export const skills = [
   'Next.js',
   'React',
